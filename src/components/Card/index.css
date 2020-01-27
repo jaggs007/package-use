@@ -5,9 +5,23 @@
   max-width: 350px;
   text-align: center;
   border-radius: 20px;
+  font-size: 18px;
 }
 
 .Card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.Card-title {
+  padding-bottom: 10px;
+  font-size: 24px;
+  margin: 0;
+  border-bottom: 2px solid #000;
+}
+
+.Card-footer {
+  border-top: 2px solid #000;
+  padding-top: 10px;
+  text-align: end;
 }
   
