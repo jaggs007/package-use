@@ -12,9 +12,18 @@ require("./index.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Card = function Card(props) {
+  var title = props.title,
+      description = props.description,
+      footer = props.footer;
   return _react.default.createElement("div", {
-    className: "card"
-  }, _react.default.createElement("div", null, "This is the custom card"), props.children);
+    className: "Card"
+  }, _react.default.createElement("h1", {
+    className: "Card-title"
+  }, title), _react.default.createElement("div", {
+    className: "Card-description"
+  }, description), _react.default.createElement("div", {
+    className: "Card-footer"
+  }, footer));
 };
 
 var _default = Card;
