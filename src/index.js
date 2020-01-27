@@ -1,3 +1,2 @@
-import Card from './components/Card'
-
-export default Card 
+export * from './components/Card'
+export * from './components/Input'
