@@ -17,9 +17,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "babel src/index.js --out-dir distribution",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "prepublish": "rm -rf ./dist && npm run build",
     "publish:npm": "rm -rf dist && mkdir dist &&  babel src/components -d dist --copy-files"
   },
   "eslintConfig": {
@@ -39,6 +40,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
     "@babel/preset-react": "^7.8.3"
   }
 }
