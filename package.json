@@ -1,13 +1,13 @@
 {
   "name": "custom-card-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": false,
   "babel": {
     "presets": [
       "@babel/preset-react"
     ]
   },
-  "files" : [
+  "files": [
     "./distribution"
   ],
   "dependencies": {
