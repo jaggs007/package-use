@@ -7,7 +7,7 @@
       "@babel/preset-react"
     ]
   },
-  "main": "./distribution/index.js",
+  "main": "./dist/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf ./distribution && babel src --out-dir distribution --copy-files",
+    "build": "rm -rf ./dist && babel src --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepublish": "npm run build"
