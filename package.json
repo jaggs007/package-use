@@ -18,11 +18,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "babel src/index.js --out-dir distribution",
+    "build": "rm -rf ./distribution && babel src --out-dir distribution --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepublish": "rm -rf ./dist && npm run build",
-    "publish:npm": "rm -rf dist && mkdir dist &&  babel src/components -d dist --copy-files"
+    "prepublish": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
