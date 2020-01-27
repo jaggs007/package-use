@@ -1,4 +1,6 @@
 .Card {
+  display: grid;
+  grid-gap: 10px;
   padding: 25px;
   color: blue;
   background: rgba(83,46,228,.25098);
