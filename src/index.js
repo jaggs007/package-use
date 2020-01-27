@@ -1,2 +1,7 @@
-export * from './components/Card'
-export * from './components/Input'
+import Card from './components/Card'
+import Input from './components/Input'
+
+export {
+  Card,
+  Input
+}
